@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/30017879/README.md)
 # ANN Practicals
 
 Practical file submissions for the Artificial Neural Networks (ANN) course.
@@ -12,6 +11,8 @@ Practical file submissions for the Artificial Neural Networks (ANN) course.
 |-----|-----------|--------|
 | 1 | Simulate a Perceptron using NumPy | [Practical-01-Perceptron](./Practical-01-Perceptron) |
 | 2 | Implement a Single Neuron Model manually | [Practical-02-Single-Neuron](./Practical-02-Single-Neuron) |
+| 3 | Implement a Feedforward Neural Network using TensorFlow | [Practical-03-Feedforward-NN](./Practical-03-Feedforward-NN) |
+| 4 | Implement a Keras MLP for Multiclass Classification | [Practical-04-MLP-Multiclass](./Practical-04-MLP-Multiclass) |
 
 ## Structure
 
@@ -33,3 +34,4 @@ Requires Python 3 and NumPy (unless a practical specifies additional libraries i
 ```bash
 pip install numpy
 ```
+
