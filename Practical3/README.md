@@ -10,7 +10,7 @@ A simple Multi-Layer Perceptron (MLP) built with Keras (TensorFlow), trained to 
 
 The **Iris dataset**: 150 flower samples, each with 4 input features (sepal length, sepal width, petal length, petal width) and 1 of 3 output classes: Setosa, Versicolor, Virginica.
 
-## How It Works (line by line, for the viva)
+## How It Works
 
 1. **Load the dataset** — `load_iris()` gives us the 4 features (`X`) and the class label (`y`) for each of the 150 samples.
 2. **Scale the features** — `StandardScaler` rescales all 4 features to a similar range (mean 0, unit variance). Neural networks train much faster and more reliably when inputs aren't on wildly different scales.
@@ -68,7 +68,7 @@ Predicted: 2 (virginica) => Actual: 1 (versicolor)
 Predicted: 2 (virginica) => Actual: 1 (versicolor)
 ```
 
-## Key Learnings (useful for viva)
+## Key Learnings
 
 - **Feature scaling matters a lot** for neural networks. Unscaled features with very different ranges can make training unstable or prevent it from converging at all — this is one of the most common reasons a model "doesn't learn."
 - **Epochs control how much the model learns from the same data.** Too few epochs and the model is undertrained (hasn't found a good solution yet); too many can eventually lead to overfitting (memorizing training data instead of generalizing). 100 was enough here without overfitting on such a small dataset.
