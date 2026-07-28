@@ -69,7 +69,7 @@ Input: [1. 1.] => Predicted: 0.0572 => Class: 0
 
 All 4 predictions now correctly match the XOR truth table.
 
-## Key Learnings (useful for viva)
+## Key Learnings 
 
 - **Random weight initialization means results can vary between runs.** This is why a fixed seed is often used in teaching/demo code — it makes results reproducible, though in real-world training this randomness is normal and usually not a problem across many training runs.
 - **More epochs alone doesn't guarantee a correct result** if the network is stuck in a local minimum — sometimes the network capacity (number of neurons) needs to increase too, not just the training time.
