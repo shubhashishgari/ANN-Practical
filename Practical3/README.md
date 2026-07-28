@@ -4,20 +4,20 @@ A feedforward neural network built using TensorFlow/Keras, trained on the XOR ga
 
 ## Files
 
-- `feedforward_nn.py` — the main program
+- `feedforward_nn.py` - the main program
 
 ## How It Works
 
 1. **Architecture**: A `Sequential` model where data flows forward through each layer with no loops (hence "feedforward").
-   - **Hidden layer**: 8 neurons, ReLU activation — learns intermediate combinations of the inputs.
-   - **Output layer**: 1 neuron, sigmoid activation — outputs a probability between 0 and 1.
+   - **Hidden layer**: 8 neurons, ReLU activation - learns intermediate combinations of the inputs.
+   - **Output layer**: 1 neuron, sigmoid activation - outputs a probability between 0 and 1.
 2. **Compiling**: Uses the Adam optimizer and binary cross-entropy loss, standard for binary classification tasks.
 3. **Training Data**: The XOR gate truth table. Unlike AND/OR, XOR outputs 1 only when the two inputs differ.
 4. **Before vs After Training**: Predictions are printed before training (random weights, near-random output) and after training (network has learned the XOR pattern).
 
 ## Why XOR (and Why Not Just a Single Neuron)
 
-XOR is **not linearly separable** — no single straight line can separate the 0s and 1s in its input space. A single perceptron/neuron (Practicals 1 and 2) can only learn linearly separable patterns like AND/OR. A feedforward network solves this because the hidden layer lets the network combine inputs non-linearly before producing the final output.
+XOR is **not linearly separable** - no single straight line can separate the 0s and 1s in its input space. A single perceptron/neuron (Practicals 1 and 2) can only learn linearly separable patterns like AND/OR. A feedforward network solves this because the hidden layer lets the network combine inputs non-linearly before producing the final output.
 
 ## Example Output
 
@@ -47,9 +47,9 @@ Input: [1. 0.] => Predicted: 0.4998 => Class: 0
 Input: [1. 1.] => Predicted: 0.0473 => Class: 0
 ```
 
-The correct XOR output should be `0,1,1,0`. Here `Input: [1,0]` was predicted as `0` instead of `1` — the network had only partially learned the pattern.
+The correct XOR output should be `0,1,1,0`. Here `Input: [1,0]` was predicted as `0` instead of `1` - the network had only partially learned the pattern.
 
-**Why it failed:** neural network weights start off randomly, and with only 4 hidden neurons the network sometimes settles into a "local minimum" — a set of weights where the error is low-ish but not actually correct, and where it gets stuck rather than continuing to improve. 500 epochs also wasn't enough to reliably escape that.
+**Why it failed:** neural network weights start off randomly, and with only 4 hidden neurons the network sometimes settles into a "local minimum" - a set of weights where the error is low-ish but not actually correct, and where it gets stuck rather than continuing to improve. 500 epochs also wasn't enough to reliably escape that.
 
 **Fix 1 — More epochs:** Increased from 500 to 2000 to give gradient descent more chances to keep improving. This alone did not fully fix it — the network still made 1 mistake, since it was already stuck in a local minimum, not just "still learning."
 
