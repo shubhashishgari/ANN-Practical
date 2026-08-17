@@ -9,12 +9,12 @@ Practical file submissions for the Artificial Neural Networks (ANN) course.
 
 | No. | Practical | Folder |
 |-----|-----------|--------|
-| 1 | Simulate a Perceptron using NumPy | [Practical-01-Perceptron](./Practical-01-Perceptron) |
-| 2 | Implement a Single Neuron Model manually | [Practical-02-Single-Neuron](./Practical-02-Single-Neuron) |
-| 3 | Implement a Feedforward Neural Network using TensorFlow | [Practical-03-Feedforward-NN](./Practical-03-Feedforward-NN) |
-| 4 | Implement a Keras MLP for Multiclass Classification | [Practical-04-MLP-Multiclass](./Practical-04-MLP-Multiclass) |
-| 5 | CNN for Binary Image Classification (Cats vs Dogs) | [Practical-05-CNN-Cats-Dogs](./Practical-05-CNN-Cats-Dogs) |
-| 6 | Keras MLP for Regression | [Practical-06-MLP-Regression](./Practical-06-MLP-Regression) |
+| 1 | Simulate a Perceptron using NumPy | [Practical 1](https://github.com/shubhashishgari/ANN-Practical/tree/main/Practical1) |
+| 2 | Implement a Single Neuron Model manually | [Practical 2](https://github.com/shubhashishgari/ANN-Practical/tree/main/Practical2) |
+| 3 | Implement a Feedforward Neural Network using TensorFlow | [Practical 3](https://github.com/shubhashishgari/ANN-Practical/tree/main/Practical3) |
+| 4 | Implement a Keras MLP for Multiclass Classification | [Practical 4](https://github.com/shubhashishgari/ANN-Practical/tree/main/Practical4) |
+| 5 | CNN for Binary Image Classification (Cats vs Dogs) | [Practical 5](https://github.com/shubhashishgari/ANN-Practical/tree/main/Practical%205) |
+| 6 | Keras MLP for Regression | [Practical 6](https://github.com/shubhashishgari/ANN-Practical/tree/main/Practical%206) |
 
 ## Structure
 
