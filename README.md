@@ -13,10 +13,13 @@ Practical file submissions for the Artificial Neural Networks (ANN) course.
 | 2 | Implement a Single Neuron Model manually | [Practical-02-Single-Neuron](./Practical-02-Single-Neuron) |
 | 3 | Implement a Feedforward Neural Network using TensorFlow | [Practical-03-Feedforward-NN](./Practical-03-Feedforward-NN) |
 | 4 | Implement a Keras MLP for Multiclass Classification | [Practical-04-MLP-Multiclass](./Practical-04-MLP-Multiclass) |
+| 5 | CNN for Binary Image Classification (Cats vs Dogs) | [Practical-05-CNN-Cats-Dogs](./Practical-05-CNN-Cats-Dogs) |
+| 6 | Keras MLP for Regression | [Practical-06-MLP-Regression](./Practical-06-MLP-Regression) |
 
 ## Structure
 
 Each practical has its own folder containing:
+
 - A `README.md` explaining the concept, approach, and expected output
 - The corresponding Python source file(s)
 
@@ -24,14 +27,13 @@ Each practical has its own folder containing:
 
 Each practical can be run independently:
 
-```bash
+\```bash
 cd Practical-XX-Topic
 python <filename>.py
-```
+\```
 
 Requires Python 3 and NumPy (unless a practical specifies additional libraries in its own README):
 
-```bash
+\```bash
 pip install numpy
-```
-
+\```
