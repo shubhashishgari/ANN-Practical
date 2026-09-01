@@ -92,6 +92,7 @@ for loss in ['mae', 'huber']:
     )
     results.append(result)
 
+
 table = pd.DataFrame([{
     "Experiment": r["name"],
     "Activation": r["activation"],
