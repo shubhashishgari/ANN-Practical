@@ -2,13 +2,12 @@ import tensorflow as tf
 import os
 
 tf.random.set_seed(42)
-
 dataset_url = "https://storage.googleapis.com/mledu-datasets/cats_and_dogs_filtered.zip"
 path_to_zip = tf.keras.utils.get_file("cats_and_dogs.zip", origin=dataset_url, extract=True)
-
 base_dir = os.path.join(os.path.dirname(path_to_zip), "cats_and_dogs_filtered")
 train_dir = os.path.join(base_dir, "train")
 validation_dir = os.path.join(base_dir, "validation")
+
 
 img_size = (150, 150)
 batch_size = 32
@@ -28,6 +27,7 @@ data_augmentation = tf.keras.Sequential([
     tf.keras.layers.RandomZoom(0.1),
 ])
 
+
 model = tf.keras.Sequential([
     tf.keras.layers.Input(shape=(150, 150, 3)),
     tf.keras.layers.Rescaling(1./255),
@@ -42,13 +42,15 @@ model = tf.keras.Sequential([
     tf.keras.layers.Conv2D(128, (3, 3), activation='relu'),
     tf.keras.layers.MaxPooling2D(2, 2),
 
-    tf.keras.layers.Flatten(),
+
+        tf.keras.layers.Flatten(),
     tf.keras.layers.Dense(128, activation='relu'),
     tf.keras.layers.Dropout(0.5),
     tf.keras.layers.Dense(1, activation='sigmoid')
 ])
 
 model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
+
 
 history = model.fit(train_ds, validation_data=val_ds, epochs=10)
 
